@@ -139,11 +139,11 @@ WHERE (categoria = 'Accesorios' OR categoria = 'Audio')
 ORDER BY precio DESC;
 
 ```
-[!--Muestra productos de las categorías Accesorios o Audio que tengan más de 20 en stock, ordenados por precio](img/Consulta9.png)
+![--Muestra productos de las categorías Accesorios o Audio que tengan más de 20 en stock, ordenados por precio](img/Consulta9.png)
 ```sql
 -- Nombres que contienen 'o' ordenados alfabéticamente
 SELECT nombre, precio FROM productos
 WHERE nombre LIKE '%o%'
 ORDER BY nombre DESC;
 ```
-[!-- Nombres que contienen 'o' ordenados alfabéticamente](img/Consulta8.png)
+![-- Nombres que contienen 'o' ordenados alfabéticamente](img/Consulta8.png)
