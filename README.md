@@ -143,3 +143,6 @@ WHERE nombre LIKE '%o%'
 ORDER BY nombre DESC;
 ```
 ![-- Nombres que contienen 'o' ordenados alfabéticamente](img/Consulta8.png)
+
+## Evidencia del quiz terminado
+![--Quiz](img/Quiz.png)
