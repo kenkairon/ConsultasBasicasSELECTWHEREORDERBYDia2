@@ -41,10 +41,12 @@ CREATE TABLE pedidos (
 ![Creacion de la tabla pedidos](img/Pedidos.png)
 
 ## Entonces habria que cambiar campos Renombra la tabla actual para conservar los datos temporalmente:
-
+```sql
 ALTER TABLE productos RENAME TO productos_old;
+```
+```sql
 DROP TABLE productos_old;
-
+```
 ## Al hacer el cambio de algunos campos la sentencia quedaría asi:
 ```sql
 CREATE TABLE productos (
@@ -55,7 +57,7 @@ CREATE TABLE productos (
     stock INTEGER DEFAULT 0
 );
 ```
-## insertar los datos
+## Insertar los datos
 ```sql
 INSERT INTO productos (id, nombre, precio, categoria, stock)
 VALUES
