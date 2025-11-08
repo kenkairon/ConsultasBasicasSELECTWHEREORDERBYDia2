@@ -1,0 +1,7 @@
+# Ignorar todas las bases de datos SQLite
+*.db
+*.sqlite
+*.sqlite3
+
+# Ignorar base de datos SQLite
+#tienda_ejemplo.db
