@@ -124,13 +124,7 @@ WHERE stock BETWEEN 20 AND 50
 ORDER BY stock DESC;
 ```
 ![-- Productos con stock entre 20 y 50, ordenados por stock descendente](img/Consulta7.png)
-```sql
-SELECT nombre, stock, precio, categoria
-FROM productos
-WHERE (stock BETWEEN 20 AND 50)
-  OR categoria = 'Electrónica'
-ORDER BY stock DESC;
-```
+--Muestra productos de las categorías Accesorios o Audio que tengan más de 20 en stock, ordenados por precio
 ```sql
 SELECT nombre, stock, precio, categoria
 FROM productos
