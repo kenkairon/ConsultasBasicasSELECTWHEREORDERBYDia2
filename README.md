@@ -72,12 +72,16 @@ VALUES
 
 ```sql
 -- Seleccionar productos con precio > 100
+.mode column
+.headers on
 SELECT nombre, precio FROM productos WHERE precio > 100;
 
 ```
 ![Seleccionar productos con precio > 100](img/Consulta1.png)
 ```sql
 -- Productos de categoría 'Electrónica' ordenados por precio descendente
+.mode column
+.headers on
 SELECT nombre, precio, categoria FROM productos
 WHERE categoria = 'Electrónica'
 ORDER BY precio DESC;
@@ -86,6 +90,8 @@ ORDER BY precio DESC;
 ![Productos de categoría 'Electrónica' ordenados por precio descendente](img/Consulta2.png)
 ```sql
 -- Productos con stock entre 10 y 40, ordenados por stock ascendente
+.mode column
+.headers on
 SELECT nombre, stock, precio FROM productos
 WHERE stock BETWEEN 10 AND 40
 ORDER BY stock ASC;
@@ -93,6 +99,8 @@ ORDER BY stock ASC;
 ![Productos con stock entre 10 y 40, ordenados por stock ascendente](img/Consulta3.png)
 ```sql
 -- Nombres que contienen 'a' ordenados alfabéticamente
+.mode column
+.headers on
 SELECT nombre, precio FROM productos
 WHERE nombre LIKE '%a%'
 ORDER BY nombre ASC;
@@ -107,12 +115,16 @@ ORDER BY nombre ASC;
 
 ```sql
 -- Seleccionar productos con precio < 100
+.mode column
+.headers on
 SELECT nombre, precio FROM productos WHERE precio < 100;
 ```
 ![-- Seleccionar productos con precio < 100](img/Consulta5.png)
 
 ```sql
 -- Productos de categoría 'Accesorios' ordenados por precio ascendente
+.mode column
+.headers on
 SELECT nombre, precio, categoria FROM productos
 WHERE categoria = 'Accesorios'
 ORDER BY precio ASC;
@@ -121,6 +133,8 @@ ORDER BY precio ASC;
 
 ```sql
 -- Productos con stock entre 20 y 50, ordenados por stock descendente
+.mode column
+.headers on
 SELECT nombre, stock, precio FROM productos
 WHERE stock BETWEEN 20 AND 50
 ORDER BY stock DESC;
@@ -128,6 +142,8 @@ ORDER BY stock DESC;
 ![-- Productos con stock entre 20 y 50, ordenados por stock descendente](img/Consulta7.png)
 --Muestra productos de las categorías Accesorios o Audio que tengan más de 20 en stock, ordenados por precio
 ```sql
+.mode column
+.headers on
 SELECT nombre, stock, precio, categoria
 FROM productos
 WHERE (categoria = 'Accesorios' OR categoria = 'Audio')
@@ -135,14 +151,16 @@ WHERE (categoria = 'Accesorios' OR categoria = 'Audio')
 ORDER BY precio DESC;
 
 ```
-![--Muestra productos de las categorías Accesorios o Audio que tengan más de 20 en stock, ordenados por precio](img/Consulta9.png)
+![--Muestra productos de las categorías Accesorios o Audio que tengan más de 20 en stock, ordenados por precio](img/Consulta8.png)
 ```sql
 -- Nombres que contienen 'o' ordenados alfabéticamente
+.mode column
+.headers on
 SELECT nombre, precio FROM productos
 WHERE nombre LIKE '%o%'
 ORDER BY nombre DESC;
 ```
-![-- Nombres que contienen 'o' ordenados alfabéticamente](img/Consulta8.png)
+![-- Nombres que contienen 'o' ordenados alfabéticamente](img/Consulta9.png)
 
 ## Evidencia del quiz terminado
 ![--Quiz](img/Quiz.png)
